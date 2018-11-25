@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--Favicon-->
-    <link rel="shortcut icon" href="assets/images/inkedFavicon.jpg" type="image/x-icon"/>
-    <link rel="icon" href="assets/images/inkedFavicon.jpg" type="image/ico"/>
+    <link rel="shortcut icon" href="assets/images/git.png" type="image/x-icon"/>
+    <link rel="icon" href="assets/images/git.png" type="image/ico"/>
     <!--Bootstrap and CSS Links-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type= "text/css" href="assets/css/style.css">
+    <!--Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <title>Bootstrap Portfolio</title>
@@ -22,14 +25,12 @@
             NAVBAR 
         --------------> 
             <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light d-print">
-                <!----LOGO---->
-                <a class="navbar-brand" href="/">
-                    <!--<img class="img-fluid name-logo" src="assets/images/name-logo-crop.png">-->
-                    <!-- <div class="card"> -->
-                        <img class="name-logo rounded-circle d-inline-block align-top img-fluid" src="assets/images/cobalt.jpg" width="130px" height="130px" alt="RW Logo">
-                    <!-- </div> -->
-                </a>
-                <!----HAMBURGER---->
+                
+                <!--NAME-->
+                <div class="logo-box">
+                    <h1 class="shiny navbar-brand">Rebecca C. Wieberdink</h1>
+                </div>
+                    <!----HAMBURGER---->
                 <button class="navbar-toggler d-xl-none" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -37,13 +38,13 @@
                 <div class="collapse navbar-collapse text-right justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">About Me <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" data-value="about" href="#">About Me <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" data-value="portfolio" href="#">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" data-value="contact" href="#">Contact</a>
                     </li>
                     <!----SECONDARY NAV DROPDOWN---->
                     <li class="nav-item dropdown">
@@ -51,38 +52,35 @@
                         Full Stack Femmes
                         </a>
                         <div class="dropdown-menu text-right" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Website</a>
-                            <a class="dropdown-item" href="#">Instagram</a>
-                            <a class="dropdown-item" href="#">Github</a>
+                            <a class="dropdown-item" href="#" target="_blank" rel="noopener">Website</a>
+                            <a class="dropdown-item" href="#" target="_blank" rel="noopener">Instagram</a>
+                            <a class="dropdown-item" href="#" target="_blank" rel="noopener">Github</a>
                         </div>
                     </li>
                     </ul>
                 </div>
             </nav>
 
-        <div id="content">
+        <div id="content" class="container-fluid">
 
             <!------------------
                 ABOUT ME PAGE
             -------------------->
-            <div id="aboutMe" class="about container-fluid">
+            <div id="about" class="about container-fluid">
                 <div class="jumbotron">
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <!-- <div class="card"> -->
-                                <img class="img-fluid rounded-circle" src="assets/images/gradimg.jpg" alt="Becky, Queen of Scots">
+                            <img class="img-fluid rounded-circle" src="assets/images/gradimg.jpg" alt="Becky, Queen of Scots">
                             <!-- </div> -->
-                            <span class="container-fluid text-justify">Rebecca C. Wieberdink</span>
+                            <span class="about-name">Rebecca C. Wieberdink</span>
                         </div>
 
                         <div class="col-lg-8 col-md-8 col-sm-12 desc">
                             <h1>Thank you for visiting!</h1>
                             <p class="p1">
                                 My name is Rebecca Wieberdink, 
-                                and I am a <b>Full Stack Web & Software Developer</b>.
-                                <br />
-                                I am currently working part-time as a TA for my Georgia Tech professor 
-                                and freelancing as a Web Developer. 
+                                and I am a <b>Full Stack Web & Software Developer</b> and a TA for my Georgia Tech professor. 
                                 <br />
                                 I aim to provide my clients with optimal usability and responsiveness, riveting user interfaces (UI), and content management strategies.
                                 I excel in data analysis and dynamic web development 
@@ -112,52 +110,75 @@
             -------------------->    
             <div id="portfolio" class="container-fluid">
                 <div class="jumbotron">
-                    <h1>Portfolio</h1>
-                    <p class="divider"></p>
+                    <h1>Portfolio</h1>            
+                    <div class="row">
             
-                    <div class="portfolio-row flex">
-            
-                        <div class="card bg-dark text-white">
+                        <!-- <div class="card bg-dark text-white">
                             <img class="card-img" src="assets/images/playlisted.jpg" alt="Playlisted">        
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">Playlisted</h5>
-                                <p class="card-text">Music that fits.</p>
-                                <p class="card-text">Playlisted allows users to instantly create music playlists according to their current mood and activity level.</p>
-                                <a class="labelLink" href="https://rocky-brook-81163.herokuapp.com/" target="_blank" rel="noopener">
-                                    Play</a> 
-                                    | 
-                                <a class="labelLink" href="https://github.com/Mkelsey25/playlisted/" target="_blank" rel="noopener">
-                                    Code</a>
+                             -->
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="hovereffect">
+                                <img class="img-fluid rounded" src="assets/images/playlisted.jpg" alt="Playlisted">
+                                <div class="overlay">
+                                    <h2 class="card-title">Playlisted</h2>
+                                    <p class="card-text">Music that fits.</p>
+                                    <p class="card-text">Automatic playlist creator according to user's mood and energy</p>
+                                    <p>
+                                        <a class="labelLink" href="https://rocky-brook-81163.herokuapp.com/" target="_blank" rel="noopener">
+                                            Play</a> 
+                                            | 
+                                        <a class="labelLink" href="https://github.com/Mkelsey25/playlisted/" target="_blank" rel="noopener">
+                                            Code</a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="card bg-dark text-white">
+                        <!-- <div class="card bg-dark text-white">
                             <img class="card-img" src="assets/images/brewhound.jpg" alt="BrewHound">
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">BrewHound</h5>
-                                <p class="card-text">Use your snout to find the stout.</p>
-                                <p class="card-text">BrewHound lets users find Atlanta breweries near their current location and collect passport stamps from breweries they have checked into.</p>
-                                <a class="labelLink" href="https://brewhound.herokuapp.com/" target="_blank" rel="noopener">
-                                    Play</a> 
-                                    | 
-                                <a class="labelLink" href="https://github.com/homsau/brewhound/" target="_blank" rel="noopener">
-                                    Code</a>
+                             -->
+                    
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="hovereffect">
+                                <img class="img-fluid rounded" src="assets/images/brewhound.jpg" alt="BrewHound">
+                                <div class="overlay">
+                                    <h2 class="card-title">BrewHound</h2>
+                                    <p class="card-text">Use your snout to find the stout.</p>
+                                    <p class="card-text">Atlanta brewery locator with check-in functionality and specialty passport stamps</p>
+                                    <p class="card-text ">
+                                        <a class="labelLink" href="https://brewhound.herokuapp.com/" target="_blank" rel="noopener">
+                                            Play</a> 
+                                            | 
+                                        <a class="labelLink" href="https://github.com/homsau/brewhound/" target="_blank" rel="noopener">
+                                            Code</a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="card bg-dark text-white">
+                        <!-- <div class="card bg-dark text-white">
                             <img class="card-img" src="assets/images/worldhands.jpg" alt="State of the World">
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">State of the World</h5>
-                                <p class="card-text">It's your world. Take charge.</p>
-                                <p class="card-text">Keep track of the latest space events, climate data, and world news from leading organizations in their fields, such as NASA, the NOAA, and the New York Times.</p>
-                                <a class="labelLink" href="https://homsau.github.io/State-of-the-World/" target="_blank" rel="noopener">
-                                Play</a> 
-                                | 
-                                <a class="labelLink" href="https://github.com/rwieberdink/State-of-the-World/" target="_blank" rel="noopener">
-                                    Code</a>
-                            </div>
-                        </div>
+                             -->
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="hovereffect">
+                                <img class="img-fluid rounded" src="assets/images/worldhands.jpg" alt="State of the World">
+                                <div class="overlay">
+                                    <h2 class="card-title">State of the World</h2>
+                                    <!-- <p class="card-text">It's your world. Take charge.</p> -->
+                                    <p class="card-text">Science news and climate data app</p>
+                                    <p class="card-text">Tech: CSS3, Javascript, API's</p>
+                                    <p>
+                                        <a class="labelLink" href="https://homsau.github.io/State-of-the-World/" target="_blank" rel="noopener">
+                                        Play</a> 
+                                        | 
+                                        <a class="labelLink" href="https://github.com/rwieberdink/State-of-the-World/" target="_blank" rel="noopener">
+                                            Code</a>
+                                    </p>
+                                </div>
+                            </div> 
+                        </div> 
 
                     </div> <!-- portfolio-row -->
                 </div> <!-- portfolio jumbotron -->
@@ -169,7 +190,6 @@
             <div id="contact" class="container-fluid">
                 <div class="jumbotron">
                     <h1>Contact Me</h1>
-                    <p class="divider"></p>
                     <p id="contactList">
                         <span id="my-email"><b>Email</b>: rebeccawieberdink@gmail.com<br /></span>
                         <span><b>LinkedIn: </b><a class="contact-link" href="https://www.linkedin.com/in/rcwieberdink" target="_blank" rel="noopener">https://www.linkedin.com/in/rcwieberdink</a></span><br />
@@ -180,7 +200,6 @@
                     <br> 
 
                     <h1>Send a Message</h1>
-                    <p class="divider"></p>
 
                     <form id="contact-form" action="https://formspree.io/rebeccawieberdink@gmail.com" method="post">
                         <div class="controls">
@@ -241,47 +260,83 @@
         <!-------------------
                 FOOTER
         --------------------->
+
+        <div id="footer" class="container-fluid">
+            <div class="row">
+                <div class="col-8">
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="social">
+                                <a aria-label="LinkedIn" href="https://www.linkedin.com/in/rcwieberdink" class="social-button linkedin"><em class="fa fa-linkedin" aria-hidden="true"></em><span></span></a>
+                                <a aria-label="GitHub" href="https://github.com/rwieberdink" class="social-button github"><em class="fa fa-github" aria-hidden="true"></em><span></span></a>
+                                <a aria-label="Instagram" href="https://instagram.com/fullstackfemmes" class="social-button instagram"><em class="fa fa-instagram" aria-hidden="true"></em><span></span></a>
+                                <a aria-label="Photoshelter" href="https://augustauniversity.photoshelter.com/" class="social-button photoshelter"><em class="fa fa-picture-o" aria-hidden="true"></em><span></span></a>
+                            </div>
+                        </div>
+                    </div>
         
-        <div id="footer">
-            <div class="row">
-                <div class="col-4">
-                    <a class="footer-link" href="#">Contact</a>
-                    <a class="footer-link" href="#">Hire Me</a>
-                    <a class="footer-link" href="#">Current Projects</a>
-                </div>
-                <div class="col-4">
-                    <a class="footer-link" href="#">Full Stack Femmes</a>
-                    <a class="footer-link" href="#">Goddess Scouts</a>
-                    <a class="footer-link" href="#">Wieberdink Photography</a>
-                </div>
-                <div class="col-4">
-                    <div class="dropdown"> 
-                        <a class="footer-link dropdown-toggle dropdown-toggle-split" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Privacy Policy
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <span class="dropdown-item">I'm not going to steal your info. Feel free to send a message on the contact page! I don't send spam.</span>
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="footer-links">
+                                <a class="footer-link" data-value="contact" href="#">Contact</a>
+                            <br><a class="footer-link" data-value="contact" href="#">Hire Me</a>
+                            <br><a class="footer-link" data-value="portfolio" href="#">Current Projects</a>
+                            </div>
+                
+                            <div class="footer-links">
+                                <div class="dropdown"> 
+                                    <a class="footer-link dropdown-toggle dropdown-toggle-split" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Privacy Policy
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <span class="dropdown-item">I'm not going to steal your info. Feel free to send a message on the contact page! I don't send spam.</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="dropdown"> 
+                                    <a class="footer-link dropdown-toggle dropdown-toggle-split" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Terms of Usage
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <span class="dropdown-item">Think of it like the band, The Used.</span>
+                                    </div>
+                                </div>
+                                
+                                <a class="footer-link" href="#">Sitemap</a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm">
+                            <div class="footer-links">
+                                <a class="footer-link" href="#" target="_blank" rel="noopener">Full Stack Femmes</a>
+                            <br><a class="footer-link" href="#" target="_blank" rel="noopener">Goddess Scouts</a>
+                            <br><a class="footer-link" href="#" target="_blank" rel="noopener">Wieberdink Photography</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="dropdown"> 
-                        <a class="footer-link dropdown-toggle dropdown-toggle-split" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Terms of Usage
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <span class="dropdown-item">Think of it like the band, The Used.</span>
-                        </div>
-                    </div>
-                    <a class="footer-link" href="#">Sitemap</a>
+        
+                </div>
+                <div class="col-4 col-xs-12">
+                    <!----LOGO---->
+                    <a class="footer-brand" href="/">
+                        <!--<img class="img-fluid name-logo" src="assets/images/name-logo-crop.png">-->
+                        <!-- <div class="card"> -->
+                            <img class="name-logo rounded-circle d-inline-block align-top img-fluid" src="assets/images/cobalt.jpg" alt="RW Logo">
+                        <!-- </div> -->
+                    </a>
                 </div>
             </div>
+
             <div class="row">
-                <div class="col-12">
-                    <p>
-                        <span class="footer-text">Rebecca Wieberdink &copy; <span id="year" class="footer-text"></span></span>
-                    </p>
+                <div class="col">
+                    <div class="copyright">
+                        <p><span class="footer-text">Rebecca Wieberdink &copy; <span id="year" class="footer-text"></span></span></p>
+                    </div>
                 </div>
             </div>
-        </div>
+
+        </div> <!--Footer-->
 
     </div> <!-- Container to fill body -->
 
@@ -298,3 +353,17 @@
 
 </body>
 </html>
+
+<!-- 
+    Responsive Breakpoints, based on screen width:
+    (xs) — col-# screen width < 576px (This is the “default” tier)
+    sm — col-sm-# screen width ≥ 576px
+    md — col-md-# screen width ≥ 768px
+    lg — col-lg-# screen width ≥ 992px
+    xl — col-xl-# screen width ≥ 1200px 
+
+    Use `col` for Columns that evenly fill across the viewport
+    Use `col-auto` for Columns that shrink to fit their content
+    he Auto-layout Columns can be combined with the 12-unit Columns
+    The Auto-layout Columns have responsive tiers (-sm,-md,-lg,-xl) too!
+-->
