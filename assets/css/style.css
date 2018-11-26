@@ -17,7 +17,7 @@ body {
 
 #content {
     padding: 10px;
-    padding-bottom: 300px;   /* Height of the footer */
+    padding-bottom: 320px;   /* Height of the footer */
 }
 
 .jumbotron {
@@ -71,10 +71,20 @@ h1 {
     padding-bottom: 10px;
 }
 
-.about span{
+.left-column {
+    padding: 0 32px 0 15px;
+}
+
+.about .occupation-list {
+    text-align: center;
+    padding: 0;
+}
+
+.about .occupation-list li{
     display: block;
     color: purple;
-    position: absolute;
+    text-decoration: none;
+    padding: 5px 0 0 0;
 }
 
 .about .desc{
@@ -133,6 +143,7 @@ h1 {
 .hovereffect img {
     display: block;
     position: relative;
+
     margin: 10px;
     -webkit-transition: all 0.35s;
     transition: all 0.35s;
@@ -178,8 +189,6 @@ h1 {
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
-
-
 
 .portfolio-row {
     height: auto;
@@ -327,18 +336,38 @@ form label {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 300px;   /* Height of the footer */
+    height: 320px;   /* Height of the footer */
     background-color: #ffffff;
-
     text-align: center;
-
+    padding: 20px 0 10px 0;
     box-shadow: -2px 2px 5px 4px rgba(0, 0, 0, 0.2);
 }
 
 .footer-link {
     color: Purple;
     line-height: 20px;
-    padding: 5px 0px;
+    padding: 10px 0px;
+}
+
+.social {
+    padding: 10px 0 20px 0;
+    flex-wrap: nowrap;
+}
+
+.footer-link:link, .footer-link:visited, .footer-link:active {
+    color: purple;
+    text-decoration: none;    
+}
+
+.footer-link:hover, .social-button:hover {
+    color: #BDA0CB;
+    text-decoration: none;    
+}
+
+.footer-link:focus {
+    text-decoration: hidden;
+    color: indigo;
+    text-decoration: wavy;
 }
 
 #footer .col-4 {
