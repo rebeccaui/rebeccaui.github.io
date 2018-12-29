@@ -445,10 +445,19 @@ form label {
         border-top: 3px solid purple;
         border-left: none;
     }
+
+    .about .occupation-list {
+        margin: 20px 0 20px 0;
+        display: flex;
+        justify-content: space-around;
+        flex-flow: nowrap; /*set flex-wrap and flex-direction*/
+    }
+    .about .occupation-list li{
+        display: inline;
+    }    
 }
 
 /* changes
-add padding to xs about me desc
 smaller name - XS
 setTimeout gradient on name
 tablet one line professions/better font
