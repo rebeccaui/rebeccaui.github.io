@@ -48,13 +48,12 @@ h1 {
 
 .navbar-brand {
     font: 400 30px/1.3 'Berkshire Swash', cursive;
-    padding: 0 5px;
-    margin-top: 10px;
+    padding: 0 5px 0 10px;
+    margin-top: 20px;
 
   /* text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(0,0,0,0.15); */
   /* font: 400 130px/0.8 'Cookie', Helvetica, sans-serif;
   text-shadow: 4px 4px 3px rgba(0,0,0,0.1);  */
-
 }
 
 /* ABOUT ME
@@ -423,6 +422,11 @@ form label {
     .about .desc{
         margin: 0 10px;
     }
+
+    /* Smaller logo */
+    .navbar-brand {
+        font: 400 20px/1.3 'Berkshire Swash', cursive;
+    }
 }
 
 @media screen and (min-width: 580px) and (max-width: 790px) {  
@@ -467,7 +471,6 @@ form label {
 }
 
 /* changes
-smaller name - XS
 setTimeout gradient on name
 tablet one line professions/better font
  */
