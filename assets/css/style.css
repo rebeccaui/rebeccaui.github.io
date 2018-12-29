@@ -436,6 +436,15 @@ form label {
         padding-bottom: 500px;   /* Height of the footer */
     }
 
+    .about .occupation-list {
+        margin: 20px 0 20px 0;
+        display: flex;
+        justify-content: space-around;
+        flex-flow: nowrap; /*set flex-wrap and flex-direction*/
+    }
+    .about .occupation-list li{
+        display: inline;
+    }    
 }
 
 @media screen and (max-width: 767px) {  
