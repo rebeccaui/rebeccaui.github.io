@@ -407,3 +407,27 @@ form label {
     color: purple;
     transition: background-position 2000ms ease-out;
 }
+
+@media screen and (max-width: 580px) {    
+    #footer {
+        height: 600px;
+        
+    }
+
+    #content {
+        padding: 10px;
+        padding-bottom: 600px;   /* Height of the footer */
+    }
+}
+
+@media screen and (min-width: 580px) and (max-width: 790px) {    
+    #footer {
+        height: 500px;
+        
+    }
+
+    #content {
+        padding: 10px;
+        padding-bottom: 500px;   /* Height of the footer */
+    }
+}
