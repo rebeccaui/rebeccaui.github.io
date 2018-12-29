@@ -89,7 +89,8 @@ h1 {
 
 .about .desc{
     padding: 2em;
-    border-left:3px solid purple;
+    border-left: 3px solid purple;
+
 }
 .about .desc h3{
     color: purple;
@@ -408,26 +409,47 @@ form label {
     transition: background-position 2000ms ease-out;
 }
 
-@media screen and (max-width: 580px) {    
+@media screen and (max-width: 580px) { 
+    /* Footer height increased to accomodate watercolor logo */
     #footer {
         height: 600px;
-        
     }
-
     #content {
         padding: 10px;
         padding-bottom: 600px;   /* Height of the footer */
     }
+
+    /* add padding to purple border on about me description */
+    .about .desc{
+        margin: 0 10px;
+    }
 }
 
-@media screen and (min-width: 580px) and (max-width: 790px) {    
+@media screen and (min-width: 580px) and (max-width: 790px) {  
+    /* Footer height increased to accomodate watercolor logo */  
     #footer {
         height: 500px;
         
     }
-
     #content {
         padding: 10px;
         padding-bottom: 500px;   /* Height of the footer */
     }
+
 }
+
+@media screen and (max-width: 767px) {  
+    /* Change purple border on about me description from left to top */  
+    .about .desc{
+        padding: 2em;
+        border-top: 3px solid purple;
+        border-left: none;
+    }
+}
+
+/* changes
+add padding to xs about me desc
+smaller name - XS
+setTimeout gradient on name
+tablet one line professions/better font
+ */
