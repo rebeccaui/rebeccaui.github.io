@@ -17,7 +17,7 @@ body {
 
 #content {
     padding: 10px;
-    padding-bottom: 320px;   /* Height of the footer */
+    padding-bottom: 330px;   /* Height of the footer */
 }
 
 .jumbotron {
@@ -336,7 +336,7 @@ form label {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 320px;   /* Height of the footer */
+    height: 330px;   /* Height of the footer */
     background-color: #ffffff;
     text-align: center;
     padding: 20px 0 10px 0;
@@ -381,9 +381,13 @@ form label {
     max-width: 250px;
 }
 
+.copyright {
+    margin: 10px 0 0 0;
+} 
+
 .footer-text {
     text-align: center;
-    color: #e943e1;    
+    color: rgb(51, 13, 155);    
     font-size: 16px;
     font-family: ‘Arial’, ‘Helvetica Neue’, Helvetica, sans-serif;
 } 
@@ -411,11 +415,11 @@ form label {
 @media screen and (max-width: 580px) { 
     /* Footer height increased to accomodate watercolor logo */
     #footer {
-        height: 600px;
+        height: 610px;
     }
     #content {
         padding: 10px;
-        padding-bottom: 600px;   /* Height of the footer */
+        padding-bottom: 610px;   /* Height of the footer */
     }
 
     /* add padding to purple border on about me description */
@@ -427,50 +431,55 @@ form label {
     .navbar-brand {
         font: 400 20px/1.3 'Berkshire Swash', cursive;
     }
-}
-
-@media screen and (min-width: 580px) and (max-width: 790px) {  
-    /* Footer height increased to accomodate watercolor logo */  
-    #footer {
-        height: 500px;
-        
-    }
-    #content {
-        padding: 10px;
-        padding-bottom: 500px;   /* Height of the footer */
-    }
 
     .about .occupation-list {
-        margin: 20px 0 20px 0;
+        margin: 20px 0 30px 0;
         display: flex;
         justify-content: space-around;
         flex-flow: nowrap; /*set flex-wrap and flex-direction*/
     }
     .about .occupation-list li{
         display: inline;
-    }    
+    }  
+}
+
+@media screen and (min-width: 580px) and (max-width: 790px) {  
+    /* Footer height increased to accomodate watercolor logo */  
+    #footer {
+        height: 510px;
+    }
+    #content {
+        padding: 10px;
+        padding-bottom: 510px;   /* Height of the footer */
+    }
 }
 
 @media screen and (max-width: 767px) {  
+    .about{
+        margin: 2em 0 2em 0;
+    }
+
     /* Change purple border on about me description from left to top */  
     .about .desc{
         padding: 2em;
         border-top: 3px solid purple;
         border-left: none;
     }
-
+    
+    
     .about .occupation-list {
-        margin: 20px 0 20px 0;
+        margin: 20px 0 30px 0;
         display: flex;
         justify-content: space-around;
         flex-flow: nowrap; /*set flex-wrap and flex-direction*/
     }
     .about .occupation-list li{
         display: inline;
-    }    
+    }  
 }
 
 /* changes
 setTimeout gradient on name
-tablet one line professions/better font
- */
+
+767px - pic gets big 
+*/

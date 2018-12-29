@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    
     //When the DOM is ready
     $(".navbar a").click(function(){
         $("body,html").animate({
@@ -33,5 +34,4 @@ $(document).ready(function() {
             $('#year').text(n);
     }
 
-
-});    
+});
