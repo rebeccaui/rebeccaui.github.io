@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">    
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <title>Bootstrap Portfolio</title>
+    <title>Portfolio</title>
 </head>
 <body>
 
@@ -23,43 +23,58 @@
         <!------------
             NAVBAR 
         --------------> 
+        <!--Navbar-->
         <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light d-print">
-            
-            <!--NAME-->
-            <div class="logo-box">
-                <h1 class="shiny navbar-brand">Rebecca C. Wieberdink</h1>
-            </div>
-                <!----HAMBURGER---->
-            <button class="navbar-toggler d-xl-none" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+
+            <!-- Navbar brand -->
+        <!--NAME-->
+        <div class="logo-box">
+            <h1 class="shiny navbar-brand">Rebecca Wieberdink</h1>
+        </div>
+            <!-- Collapse button -->
+            <button class="navbar-toggler first-button d-xl-none" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <!--<span class="navbar-toggler-icon"></span>-->
+            <div class="animated-icon1"><span></span><span></span><span></span></div>
             </button>
-            <!----NAV DROPDOWN---->
+        
+            <!-- NAV DROPDOWN -->
             <div class="collapse navbar-collapse text-right justify-content-end" id="navbarNavDropdown">
-                <ul class="navbar-nav">
+        
+            <!-- Links -->
+            <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" data-value="about" href="/">About Me <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" data-value="#about" href="#about">About Me <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-value="portfolio" href="/">Portfolio</a>
+                    <a class="nav-link" data-value="#portfolio" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-value="contact" href="/">Contact</a>
+                    <a class="nav-link" data-value="#contact" href="#contact">Contact</a>
                 </li>
+                
                 <!----SECONDARY NAV DROPDOWN---->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Full Stack Femmes
                     </a>
                     <div class="dropdown-menu text-right" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="/" target="_blank" rel="noopener">Website</a>
-                        <a class="dropdown-item" href="/" target="_blank" rel="noopener">Instagram</a>
-                        <a class="dropdown-item" href="/" target="_blank" rel="noopener">Github</a>
+                        <a class="dropdown-item disabled" href="#" target="_blank" rel="noopener">Website</a>
+                        <a class="dropdown-item disabled" href="#" target="_blank" rel="noopener">Instagram</a>
+                        <a class="dropdown-item disabled" href="#" target="_blank" rel="noopener">Github</a>
                     </div>
                 </li>
-                </ul>
+            </ul>
+            <!-- Links -->
+        
             </div>
+            <!-- Collapsible content -->
+        
         </nav>
+        <!--/.Navbar-->
 
+
+         
         <div id="content" class="container-fluid">
 
             <!------------------
@@ -250,7 +265,7 @@
                         <span id="my-email"><b>Email</b>: rebeccawieberdink@gmail.com<br /></span>
                         <span><b>LinkedIn: </b><a class="contact-link" href="https://www.linkedin.com/in/rcwieberdink" target="_blank" rel="noopener">https://www.linkedin.com/in/rcwieberdink</a></span><br />
                         <span><b>GitHub: </b><a class="contact-link" href="https://github.com/rwieberdink" target="_blank" rel="noopener">https://github.com/rwieberdink</a></span><br />
-                        <span><b>Twitter: </b><a class="contact-link" href="https://twitter.com/codeNameWiebs" target="_blank" rel="noopener">@codeNameWiebs</a></span>
+                        <span><b>Instagram: </b><a class="contact-link" href="https://instagram.com/fullstackfemmes" target="_blank" rel="noopener">@fullstackfemmes</a></span>
                     </p>
                     
                     <br> 
@@ -326,9 +341,9 @@
 
                         <div class="flex-column col-sm align-items-stretch">
                             <div class="footer-links">
-                                    <a class="footer-link" data-value="contact" href="/">Contact</a>
-                                <br><a class="footer-link" data-value="contact" href="/">Hire Me</a>
-                                <br><a class="footer-link" data-value="portfolio" href="/">Current Projects</a>
+                                    <a class="footer-link" data-value="#contact" href="#contact">Contact</a>
+                                <br><a class="footer-link" data-value="#contact" href="#contact">Hire Me</a>
+                                <br><a class="footer-link" data-value="#portfolio" href="#portfolio">Current Projects</a>
                             </div>
                 
                             <div class="footer-links">
@@ -350,7 +365,7 @@
                                     </div>
                                 </div>
                                 
-                                <a class="footer-link" href="#">Sitemap</a>
+                                <!-- <a class="footer-link" href="#">Sitemap</a> -->
                             </div>
                         </div>
 
@@ -389,9 +404,9 @@
                 
                             <div class="footer-links">
                                     <a class="footer-link" href="https://www.instagram.com/fullstackfemmes" target="_blank" rel="noopener">Full Stack Femmes</a>
-                                <br><a class="footer-link" href="/" target="_blank" rel="noopener">Goddess Scouts</a>
-                                <br><a class="footer-link" href="/" target="_blank" rel="noopener">Wieberdink Photography</a>
-                                <br><a class="footer-link" href="/" target="_blank" rel="noopener"></a>
+                                <br><a class="footer-link" href="#" target="_blank" rel="noopener">Goddess Scouts</a>
+                                <br><a class="footer-link" href="https://www.instagram.com/fullstackfemmes" target="_blank" rel="noopener">Wieberdink Photography</a>
+                                <br><a class="footer-link" href="#" target="_blank" rel="noopener"></a>
                             </div>
 
                         </div>
