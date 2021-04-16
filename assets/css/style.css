@@ -5,7 +5,9 @@ body {
     margin:0;
     padding:0;
     height:100%;
-    background-image: linear-gradient(260deg, #2376ae 0%, purple 100%);
+    /* background-color: #81ffff; */
+    /* background-color: #BDA0CB; */
+    /* background-image: linear-gradient(260deg, #2376ae 0%, purple 100%); */
     /* background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%); */
 }
 
@@ -22,12 +24,12 @@ body {
 
 .jumbotron {
     background-color: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: 2px 2px 5px 4px rgba(0, 0, 0, 0.2);
+    /* border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 5px 4px rgba(0, 0, 0, 0.2); */
 }
 
 h1 {
-    color: purple;
+    color: #BDA0CB;
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
@@ -37,18 +39,21 @@ h1 {
 
 .navbar {
     background-color: #ffffff;
-    /* background-color: #ffffffcc; */
-    box-shadow: 0px 2px 5px 4px rgba(0, 0, 0, 0.2);
-    color: Purple;
+    /* box-shadow: 0px 2px 5px 4px rgba(0, 0, 0, 0.2); */
     padding: 0 10px 0 0;
 }
 
+.nav-link {
+    color:#BDA0CB;
+}
+
 .logo-box {
-    background-color: purple;
+    background-color: #BDA0CB;
     /* background-image: url("/assets/images/ribbon-bg.png"); */
 }
 
 .navbar-brand {
+    /* font: 400 30px/1.3 'Berkshire Swash', cursive; */
     font: 400 30px/1.3 'Berkshire Swash', cursive;
     padding: 0 5px 0 10px;
     margin-top: 20px;
@@ -234,7 +239,7 @@ h1 {
 =================================================*/
 
 .about{
-    margin: 4em 0 2em 0;
+    /* margin: 4em 0 2em 0; */
     padding: 1em;
     position: relative;
 }
@@ -255,23 +260,23 @@ h1 {
 
 .about .occupation-list li{
     display: block;
-    color: purple;
+    color: #BDA0CB;
     text-decoration: none;
     padding: 5px 0 0 0;
 }
 
 .about .desc{
     padding: 2em;
-    border-left: 3px solid purple;
+    border-left: 3px solid #BDA0CB;
 
 }
 .about .desc h3{
-    color: purple;
+    color: #BDA0CB;
 }
-.about .desc p, ul, span {
+/* .about .desc p, ul, span {
     line-height:1.25;
     color: purple;
-}
+} */
 
 /* PORTFOLIO
 =================================================*/
@@ -442,7 +447,7 @@ h1 {
 }
 
 form label {
-    color: purple;
+    /* color: purple; */
 }
 
 .form-control {
@@ -514,11 +519,11 @@ form label {
     background-color: #ffffff;
     text-align: center;
     padding: 20px 0 10px 0;
-    box-shadow: -2px 2px 5px 4px rgba(0, 0, 0, 0.2);
+    /* box-shadow: -2px 2px 5px 4px rgba(0, 0, 0, 0.2); */
 }
 
 .footer-link {
-    color: Purple;
+    color: #000;
     line-height: 20px;
     padding: 10px 0px;
 }
@@ -529,7 +534,7 @@ form label {
 }
 
 .footer-link:link, .footer-link:visited, .footer-link:active {
-    color: purple;
+    color: #000;
     text-decoration: none;    
 }
 
@@ -561,15 +566,15 @@ form label {
 
 .footer-text {
     text-align: center;
-    color: rgb(51, 13, 155);    
+    color: #BDA0CB;    
     font-size: 16px;
     font-family: ‘Arial’, ‘Helvetica Neue’, Helvetica, sans-serif;
 } 
 
 /* Credit to: Sarah Quigley for Shiny Gradient Hover Effect */
 .shiny {
-    background-image: -webkit-linear-gradient(left, white 25%, #BDA0CB 37.5%, purple, indigo 62.5%, white 75%);
-    background-image: linear-gradient(90deg, white 25%, #BDA0CB 37.5%, purple, indigo 62.5%, white 75%);
+    background-image: -webkit-linear-gradient(left, white 25%, #81ffff 37.5%, #81c1fc, #81ffff 62.5%, white 75%);
+    background-image: linear-gradient(90deg, white 25%, #81ffff 37.5%, #81c1fc, #81ffff 62.5%, white 75%);
     background-position: right center;
     background-size: 400% auto;
     -webkit-background-clip: text;
