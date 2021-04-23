@@ -1,6 +1,17 @@
 $(document).ready(function() {
-    
     //When the DOM is ready
+
+    $(document).click(function(event) {
+        var click = $(event.target);
+        var _open = $(".navbar-collapse").hasClass("show");
+        if (_open === true && !click.hasClass("navbar-toggler")) {
+            $("navbar-toggler").click();
+            $(".animated-icon1").click();
+            $(".animated-icon2").click();
+            $(".animated-icon3").click();
+        }
+    })
+
     $(".navbar-nav a").click(function(e){
         $("body,html").animate({
          scrollTop:$("#" + $(this).data('value')).offset().top
@@ -19,12 +30,12 @@ $(document).ready(function() {
         $('.animated-icon3').toggleClass('open');
     });
       
-
-    $(".footer a").click(function(){
-        $("body,html").animate({
-         scrollBottom:$("#" + $(this).data('value')).offset().top
-        },1000)
-    });
+    // Scroll for footer links
+    // $(".footer a").click(function(){
+    //     $("body,html").animate({
+    //      scrollBottom:$("#" + $(this).data('value')).offset().top
+    //     },1000)
+    // });
 
     var n = new Date().getFullYear();
 
