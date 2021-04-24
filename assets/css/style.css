@@ -5,7 +5,7 @@ body {
     margin:0;
     padding:0;
     height:100%;
-    /* background-color: #81ffff; */
+    /* background-color: #23f1e0; */
     /* background-color: #BDA0CB; */
 }
 
@@ -41,7 +41,7 @@ body {
 }
 
 .nav-link:hover {
-    color:#848086;
+    color:#23f1e0;
 }
 
 .logo-box {
@@ -291,14 +291,28 @@ body {
     margin-bottom: 20px;
 }
 
+.portfolio-row {
+    justify-content: center;
+}
+
+.portfolio-container {
+    margin: 10px 5px 20px 5px;
+    max-width: 350px;
+}
+
+.labelLink:hover {
+    color:#BDA0CB;
+}
+
 .hovereffect {
     width: 100%;
     height: 100%;
     float: left;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
     text-align: center;
     cursor: default;
+
 }
   
 .hovereffect .overlay {
@@ -328,10 +342,10 @@ body {
 .hovereffect img {
     display: block;
     position: relative;
-
-    margin: 10px;
     -webkit-transition: all 0.35s;
     transition: all 0.35s;
+    border: 3px black solid;
+    box-shadow: 12px 12px #BDA0CB;
 }
   
 .hovereffect:hover img {
@@ -344,7 +358,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     position: relative;
-    font-size: 17px;
+    font-size: 1.5rem;
     background-color: transparent;
     color: #FFF;
     padding: .5em 0 .1em 0;
@@ -359,6 +373,7 @@ body {
 .hovereffect a, .hovereffect p {
     color: #FFF;
     line-height: 1.25;
+    font-size: 1rem;
     padding: 0 0 0 0;
     opacity: 0;
     filter: alpha(opacity=0);
@@ -410,7 +425,7 @@ body {
 }
 
 .contact-link:hover {
-    color: #81ffff;
+    color: #23f1e0;
 }
 
 .contact-link:focus {
@@ -450,11 +465,11 @@ body {
 }
 
 .btn-send:hover, .btn-send:focus {
-    background-color: #81ffff;
+    background-color: #23f1e0;
 }
 
 .btn-send:active {
-    color: #81ffff;
+    color: #23f1e0;
 }
 
 /* FOOTER
@@ -492,13 +507,13 @@ body {
 }
 
 .footer-link:hover, .social-button:hover {
-    color: #81ffff;
+    color: #23f1e0;
     text-decoration: none;    
 }
 
 .footer-link:focus {
     text-decoration: hidden;
-    color: #81ffff;
+    color: #23f1e0;
     text-decoration: wavy;
 }
 
@@ -515,8 +530,8 @@ body {
 
 /* Credit to: Sarah Quigley for Shiny Gradient Hover Effect */
 .shiny {
-    background-image: -webkit-linear-gradient(left, white 25%, #81ffff 37.5%, #81c1fc, #81ffff 62.5%, white 75%);
-    background-image: linear-gradient(90deg, white 25%, #81ffff 37.5%, #81c1fc, #81ffff 62.5%, white 75%);
+    background-image: -webkit-linear-gradient(left, white 25%, #81ffff 37.5%, #23f1e0, #81ffff 62.5%, white 75%);
+    background-image: linear-gradient(90deg, white 25%, #81ffff 37.5%, #23f1e0, #81ffff 62.5%, white 75%);
     background-position: right center;
     background-size: 400% auto;
     -webkit-background-clip: text;
@@ -553,9 +568,6 @@ body {
         font: 400 20px/1.3 'Berkshire Swash', cursive;
     }
 
-    .hovereffect h2, .hovereffect a, .hovereffect p {
-        font-size: .8rem;
-    }
 
 }
 
