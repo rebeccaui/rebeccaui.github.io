@@ -9,7 +9,6 @@ body {
     /* background-color: #BDA0CB; */
 }
 
-
 #container {
     min-height: 100%; /* ensure footer stays the full height of the screen even if there is hardly any content */
     position: relative;    /* So we can absolutely position items inside */
